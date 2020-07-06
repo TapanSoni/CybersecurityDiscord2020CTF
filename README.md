@@ -63,7 +63,7 @@ Print out the ```Day1Code.txt``` file to see the code of Day 1.
 
 ```Day 1's code: CDCTF{pushflagpackets}```
 
-## Challenge 2 -> Day 2: Tuesday
+## Challenge 2 - Day 2: Tuesday
 
 ### Initially given synopsis
 
@@ -71,10 +71,11 @@ I found this weird user when I was browsing reddit -> u/sdfjkloeifpoiwkef - They
 
 ### Initially given files
 
+None.
 
 ### Solution
 
-When you search for u/sdfjkloeifpoiwkef on Reddit, you will see their profile. There are a bunch of images that are posted on the profile by the user. They are there to throw you off.
+When you search for ```u/sdfjkloeifpoiwkef``` on Reddit, you will see their profile. There are a bunch of images that are posted on the profile by the user. They are there to throw you off.
 
 Look at the user description box under the profile image and you will see a link there. The link is ```https://gofile.io/d/MgWhQ5``` -- it is a GoFile link to an image.
 
@@ -87,7 +88,7 @@ Look at the user description box under the profile image and you will see a link
 |![corkbottle.jpg](Files/corkbottle.jpg)|
 
 Now, if you try and perform steganalysis on the image, nothing is going to come of it.
-The code of the day is hidden in the EXIF data of the image. 
+The code of the day is hidden in the EXIF data of the image.
 
 Well, I guess rummaging through EXIF data is a form of steganalysis.
 
@@ -98,7 +99,8 @@ Open the comments section.
 This is the content of the comments section:
 
 ```
-This is a picture of a cork bottle. The cork is usually used to cap off wine bottles but in this case, they made bottles out of corks.
+This is a picture of a cork bottle. The cork is usually used to cap off
+wine bottles but in this case, they made bottles out of corks.
 
 
 
@@ -117,6 +119,31 @@ I used this converter to convert hex numbers to ASCII characters - https://www.r
 ```Day 2's code: CDCTF{sha256}```
 
 ## Challenge 3 - Day 3: Wednesday
+
+### Initially given synopsis
+
+I've hidden today's code in the server somewhere. Look everywhere and at everything.
+
+### Initially given files
+
+None.
+
+### Solution
+
+In the ```general-ctf``` channel, when you scroll up a little bit, you will see a message by Tapan Soni saying ```Day 3 -> CDCTF{This is not the code - you need to find the code hidden throughout the server}```
+
+This is the first clue. Well, a message, not really a clue.
+
+|Fragment #| Code fragment| Location|
+|-|-|-|
+|1/4|c|In the ```general-sparx``` channel description under the ```SPARX``` category|
+|2/4|h|In the ```project-managers``` channel description under the ```RFID``` category|
+|3/4|r|In the ```announcements``` channel under the ```PUBLIC DOMAIN``` category. Look at the emoji reactions of the recent announcements|
+|4/4|(|Set as Tapan Soni's status|
+
+### Code
+
+```Day 3's code: CDCTF{chr(}```
 
 ## Challenge 4 - Day 4: Thursday
 
