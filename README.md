@@ -61,9 +61,9 @@ Print out the ```Day1Code.txt``` file to see the code of Day 1.
 |-----------|
 |![d1code.png](Files/d1code.png)|
 
-### Code
+### Code 
 
-Day 1's code is: CDCTF{pushflagpackets}
+Day 1's code 👉 CDCTF{pushflagpackets}
 
 ## Challenge 2 - Day 2: Tuesday
 
