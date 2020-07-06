@@ -4,9 +4,7 @@
 
 ## Challenge 1 - Day 1: Monday
 
-### Given
-
-##### Synopsis
+### Initially given synopsis
 
 They say a picture is worth a thousand words. I want to say that this picture is worth about 10, 000 words. This is the iconic and legendary nasa space shuttle seen here Booking it to space. This Particular image is of the Space shuttle on its 27th mission. A couple of fun facts about the space shuttle:
 
@@ -20,7 +18,7 @@ They say a picture is worth a thousand words. I want to say that this picture is
 
 The space shuttle program has transformed the direction of space travel forever. It has transformed thousands of lives and given us a new direction to venture into when looking up at the STARS.
 
-##### Files
+### Initially given files
 
 |shuttle.png|
 |-----------|
@@ -65,17 +63,58 @@ Print out the ```Day1Code.txt``` file to see the code of Day 1.
 
 ```Day 1's code: CDCTF{pushflagpackets}```
 
-## Challenge 2 - Day 2: Tuesday
+## Challenge 2 -> Day 2: Tuesday
 
-### Given
+### Initially given synopsis
 
-##### Synopsis
+I found this weird user when I was browsing reddit -> u/sdfjkloeifpoiwkef - They were posting a lot of pictures. I don't know if the pictures mean anything. I couldn't see anything out of the ordinary.
 
-##### Files
+### Initially given files
+
 
 ### Solution
 
+When you search for u/sdfjkloeifpoiwkef on Reddit, you will see their profile. There are a bunch of images that are posted on the profile by the user. They are there to throw you off.
+
+Look at the user description box under the profile image and you will see a link there. The link is ```https://gofile.io/d/MgWhQ5``` -- it is a GoFile link to an image.
+
+|Location of the GoFile link|
+|-----------|
+|![](Files/d2_link_loc.png)|
+
+|Image at the GoFile link|
+|-----------|
+|![corkbottle.jpg](Files/corkbottle.jpg)|
+
+Now, if you try and perform steganalysis on the image, nothing is going to come of it.
+The code of the day is hidden in the EXIF data of the image. 
+
+Well, I guess rummaging through EXIF data is a form of steganalysis.
+
+Anyways (on Windows), right click on the image > Properties > Details > Comments
+
+Open the comments section.
+
+This is the content of the comments section:
+
+```
+This is a picture of a cork bottle. The cork is usually used to cap off wine bottles but in this case, they made bottles out of corks.
+
+
+
+
+*What is this*??
+43 44 43 54 46 7b 73 68 61 32 35 36 7d
+```
+
+The encoded phrase at the bottom is the flag. It is in hexadecimal and needs to be converted to its character equivalent.
+
+I used this converter to convert hex numbers to ASCII characters - https://www.rapidtables.com/convert/number/hex-to-ascii.html
+
+
 ### Code
+
+```Day 2's code: CDCTF{sha256}```
 
 ## Challenge 3 - Day 3: Wednesday
 
