@@ -24,7 +24,11 @@ The space shuttle program has transformed the direction of space travel forever.
 
 |shuttle.png|
 |-----------|
-|![shuttle.png](Files/shuttle.png)|
+|
+
+![shuttle.png](Files/shuttle.png)
+
+|
 
 ### Solution
 
@@ -41,33 +45,38 @@ By looking at the synopsis you can see certain words capatilized. Words that are
 09. Orbits
 10. STARS
 
-When you look at the capatilized letters of the words - they spell ```BPSTEGANO``` and ```STARS```
-
+When you look at the capatilized letters of the words - they spell ` `  ` BPSTEGANO `  `  ` and `  `  ` STARS `  ` `
 [BPStegano](https://github.com/TapanSoni/BPStegano) is the image steganography tool written by Tapan Soni and his group for his Graduate Cryptography class during the Fall of 2019.
 
 BPStegano uses AES-128 encryption a custom LSB random pixel algorithm hiding to hide raw strings and any type of file inside images.
 
-Download and run BPStegano on the shuttle.png image. The password is ```STARS```.
+Download and run BPStegano on the shuttle.png image. The password is ` `  ` STARS `  ` ` .
 
-BPStegano will decode the image and save the contents of the image into a ```HIDDEN_DATA``` folder.
+BPStegano will decode the image and save the contents of the image into a ` `  ` HIDDEN_DATA `  ` ` folder.
 
-Print out the ```Day1Code.txt``` file to see the code of Day 1.
+Print out the ` `  ` Day1Code.txt `  ` ` file to see the code of Day 1.
 
 |Output of BPStegano|
 |-----------|
-|![d1_bps.png](Files/d1_bps.png)|
+|
+
+![d1_bps.png](Files/d1_bps.png)
+
+|
 
 |Contents of the HIDDEN_DATA folder|
 |-----------|
-|![d1code.png](Files/d1code.png)|
+|
 
-```### Code ```
+![d1code.png](Files/d1code.png)
 
-```Day 1's code: CDCTF{pushflagpackets}```
+|
+
+### Code
+
+` `  ` Day 1's code: CDCTF{pushflagpackets} `  ` `
 
 ## Challenge 2 - Day 2: Tuesday
-
-
 
 ## Challenge 3 - Day 3: Wednesday
 
