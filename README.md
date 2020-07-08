@@ -147,4 +147,119 @@ This is the first clue. Well, a message, not really a clue.
 
 ## Challenge 4 - Day 4: Thursday
 
+### Initilly given synopsis
+
+In progress
+
+### Initially given files
+
+[Wireshark Packet Dump](Files/day4.pcapng)
+
+### Solution
+
+```python
+# Rowan Cybersecurity Club Discord CTF - Day 4 Code
+# Written by Tapan Soni
+# THIS IS MY VERSION OF THE SOLUTION - YOUR SOLUTION MAY (PROBABLY WILL) DEFER
+# 6/25/2020
+
+# Import Scapy and hashlib
+# Scapy for reading in the packets from the PCAP file and working with packet values
+# Hashlib for the SHA256 hashing algorithm
+from scapy.all import *
+import hashlib
+
+# Initialize the SHA256 hashing algorithm
+h = hashlib.sha256()
+
+# Read in the packets from the PCAP file
+packets = rdpcap("day4.pcapng")
+
+# a -> Array to hold the decoded letters in the final flag - character array
+# s -> Holds the 8-bit binary string that will be turned into a character - string
+a = []
+s = ""
+
+# srcIP -> Source IP address of the packet - string
+# dstIP -> Destination IP address of the packet - string
+# srcPort -> Source port number of the packet - int
+# dstPort -> Destination port number of the packet - int
+# seqNum -> Sequence number of the packet - int
+# data -> Data of the packet - bytes
+srcIP = ""
+dstIP = ""
+srcPort = 0
+dstPort = 0
+seqNum = 0
+data = b""
+
+# Check every packet in the packet array
+for packet in packets:
+    
+    # Check if the packet is an IPv4 packet
+    if IP in packet:
+        
+        # Check if a TCP layer exists
+        if TCP in packet:
+
+            # Check if the TCP PSH (push) flag is set (enabled)
+            if (packet[TCP].flags == 8):
+                
+                # Get the srcIP, dstIP, srcPort, dstPort, seqNum, and data
+                srcIP = packet[IP].src
+                dstIP = packet[IP].dst
+                srcPort = packet[TCP].sport
+                dstPort = packet[TCP].dport
+                seqNum = packet[TCP].seq
+                data = packet[Raw].load
+                
+                # Concatenate the data into one giant string - everything in bytes
+                dataToHash = srcIP.encode() + dstIP.encode() + str(srcPort).encode() + str(dstPort).encode() + str(seqNum).encode() + data
+                
+                # Hash the data
+                h.update(dataToHash)
+                
+                # Get the hexadecimal digest and convert it to binary to get the binary hash of the data
+                hexDigest = h.hexdigest()
+                binDigest = bin(int(hexDigest, 16))[2:]
+                
+                # Get the last 8 bits of the binary hash
+                last8Bits = binDigest[-8:]
+                
+                # Convert the 8 bits to a character and add it to the array to print later
+                letter = chr(int(last8Bits, 2))
+                a.append(letter)
+
+    # Delete the hash object and create a new one for every iteration
+    # BECAUSE -> the .update() function concatenates the input paramater 
+    # to whatever the previous parameter was. For example -> If I call
+    # h.update("Hello") 10 times, I'm going to get a different hash everytime.
+    
+    # Not really a problem if on both the server & client side it is done that
+    # way, but for large messages, the buffer can blow up. NOT GOOD!
+    # And it's bad practice - calling h.update("Hello") 9 times shouldn't give
+    # me a different hash than the first time I called it.
+    
+    # To solve that problem -> Delete and create a new hashlib.sha256() object h.
+    # This "bug" took me about 15 hours to debug and figure out what was going on
+    # Didn't expect the update() function to work like this
+    del h
+    h = hashlib.sha256()
+
+# Print out the array to see the final flag
+# end = "" just keeps it all on one line - easier to read
+print()
+for k in a:
+    print(k, end = "")
+
+print()
+```
+
+The output of this Python program is the code for day 4.
+
+### Code
+
+```Day 4's code: cdctf[y917tnof]```
+
 ## Challenge 5 - Day 5: Friday
+
