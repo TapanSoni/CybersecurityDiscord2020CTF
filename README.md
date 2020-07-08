@@ -273,9 +273,36 @@ The output of this Python program is the code for day 4.
 
 ### Initially given synopsis
 
+This might be helpful - https://tinyurl.com/[DAY 4 CODE]
+
 ### Initially given files
+
+None.
 
 ### Solution
 
+When you go to the tinyurl link, it redirects you to a Google Form.
+
+In the Google Form there is an image of Emperor Palpatine with a bunch of stuff on his face.
+
+
+
+You're going to have make sure that your screen brightness is all the way up and you're not using a blue light filter.
+
+In the bottom left of the image - in that dark spot to the right of the blue markings, there is a URL.
+
+The URL is ```elvis.rowan.edu/~sonit9/```.
+
+I tried my best to make it as visible as possible while keeping it hidden.
+
+|Image in the Google Form|
+|-----------|
+|![palpatine.png](Files/palpatine.png)|
+|Link location|
+|![elvis_link_location.png](Files/elvis_link_location.png)|
+|URL|
+|![elvis_link.png](Files/elvis_link.png)|
+
 ### Code
 
+## Conclusion
