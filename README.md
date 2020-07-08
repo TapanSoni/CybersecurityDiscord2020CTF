@@ -296,6 +296,7 @@ The URL is ```elvis.rowan.edu/~sonit9/```.
 I tried my best to make it as visible as possible while keeping it hidden.
 
 |Image in the Google Form|
+|-|
 |![palpatine.png](Files/palpatine.png)|
 |Link location|
 |![elvis_link_location.png](Files/elvis_link_location.png)|
