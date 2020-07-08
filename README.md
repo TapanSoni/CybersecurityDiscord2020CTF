@@ -214,16 +214,17 @@ for packet in packets:
                 data = packet[Raw].load
                 
                 # Concatenate the data into one giant string - everything in bytes
-                dataToHash = srcIP.encode() + dstIP.encode() + str(srcPort).encode() + str(dstPort).encode() + str(seqNum).encode() + data
+                dataToHash = srcIP.encode() + dstIP.encode() + str(srcPort).encode() + \
+                str(dstPort).encode() + str(seqNum).encode() + data
                 
                 # Hash the data
                 h.update(dataToHash)
                 
-                # Get the hexadecimal digest and convert it to binary to get the binary hash of the data
+                # Get the hexadecimal digest -> convert to a binary hash
                 hexDigest = h.hexdigest()
                 binDigest = bin(int(hexDigest, 16))[2:]
                 
-                # Get the last 8 bits of the binary hash
+                # Get the last 8 bits (1 byte) of the binary hash
                 last8Bits = binDigest[-8:]
                 
                 # Convert the 8 bits to a character and add it to the array to print later
