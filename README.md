@@ -170,6 +170,8 @@ from scapy.all import *
 import hashlib
 
 # Initialize the SHA256 hashing algorithm
+# [DAY 2 CODE]
+# sha256
 h = hashlib.sha256()
 
 # Read in the packets from the PCAP file
@@ -200,9 +202,12 @@ for packet in packets:
     if IP in packet:
         
         # Check if a TCP layer exists
+        # If the TCP layer exists - then TCP flags can be set
         if TCP in packet:
 
             # Check if the TCP PSH (push) flag is set (enabled)
+            # [DAY 1 CODE]
+            # if (pushflagpacket) in p -> Meaning if the push flag is set (enabled)
             if (packet[TCP].flags == 8):
                 
                 # Get the srcIP, dstIP, srcPort, dstPort, seqNum, and data
@@ -215,7 +220,7 @@ for packet in packets:
                 
                 # Concatenate the data into one giant string - everything in bytes
                 dataToHash = srcIP.encode() + dstIP.encode() + str(srcPort).encode() + \
-                str(dstPort).encode() + str(seqNum).encode() + data
+                    str(dstPort).encode() + str(seqNum).encode() + data
                 
                 # Hash the data
                 h.update(dataToHash)
@@ -228,6 +233,8 @@ for packet in packets:
                 last8Bits = binDigest[-8:]
                 
                 # Convert the 8 bits to a character and add it to the array to print later
+                # letter = [DAY 3 CODE]int(last8Bits, 2)
+                # letter = chr(int(last8Bits, 2))
                 letter = chr(int(last8Bits, 2))
                 a.append(letter)
 
@@ -263,4 +270,12 @@ The output of this Python program is the code for day 4.
 ```Day 4's code: cdctf[y917tnof]```
 
 ## Challenge 5 - Day 5: Friday
+
+### Initially given synopsis
+
+### Initially given files
+
+### Solution
+
+### Code
 
