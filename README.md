@@ -71,6 +71,8 @@ Print out the ```Day1Code.txt``` file to see the code of Day 1.
 
 ```Day 1's code: CDCTF{pushflagpackets}```
 
+[Back to the top](#rowan-universitys-cybersecurity-club-2020-discord-ctf)
+
 ## Challenge 2 - Day 2: Tuesday
 
 ### Initially given synopsis
@@ -126,6 +128,8 @@ I used this converter to convert hex numbers to ASCII characters - https://www.r
 
 ```Day 2's code: CDCTF{sha256}```
 
+[Back to the top](#rowan-universitys-cybersecurity-club-2020-discord-ctf)
+
 ## Challenge 3 - Day 3: Wednesday
 
 ### Initially given synopsis
@@ -152,6 +156,8 @@ This is the first clue. Well, a message, not really a clue.
 ### Code
 
 ```Day 3's code: CDCTF{chr(}```
+
+[Back to the top](#rowan-universitys-cybersecurity-club-2020-discord-ctf)
 
 ## Challenge 4 - Day 4: Thursday
 
@@ -277,6 +283,8 @@ The output of this Python program is the code for day 4.
 
 ```Day 4's code: cdctf[y917tnof]```
 
+[Back to the top](#rowan-universitys-cybersecurity-club-2020-discord-ctf)
+
 ## Challenge 5 - Day 5: Friday
 
 ### Initially given synopsis
@@ -292,8 +300,6 @@ None.
 When you go to the tinyurl link, it redirects you to a Google Form.
 
 In the Google Form there is an image of Emperor Palpatine with a bunch of stuff on his face.
-
-
 
 You're going to have make sure that your screen brightness is all the way up and you're not using a blue light filter.
 
@@ -461,6 +467,8 @@ And that's it. Once you decompress the file 10000 times (which will take a coupl
 ### Code
 
 ```Day 5's code: CDCTF{trianglebagels}```
+
+[Back to the top](#rowan-universitys-cybersecurity-club-2020-discord-ctf)
 
 ## Conclusion
 
