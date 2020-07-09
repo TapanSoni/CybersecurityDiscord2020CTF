@@ -463,3 +463,22 @@ And that's it. Once you decompress the file 10000 times (which will take a coupl
 ```Day 5's code: CDCTF{trianglebagels}```
 
 ## Conclusion
+
+```
+Day 1's code: CDCTF{pushflagpackets}
+Day 2's code: CDCTF{sha256}
+Day 3's code: CDCTF{chr(}
+Day 4's code: cdctf[y917tnof]
+Day 5's code: CDCTF{trianglebagels}
+```
+
+I had a lot of fun creating the challenges for this CTF, especialy the HTML pages.
+Day 4's challenge was inspired by my thesis on Moving Target Network Steganography. It is a very simple version of my proof of concept simulation. I had to take a lot into account when creating the code for that challenge because I didn't want to make it so difficult where no one could program it. But I didn't want to give away all the secrets either -- I wanted the students to think about why and how the program works the way it does. That update() function for the hashlib library was a pain to figure out - I never expected the function to work that way.
+
+The HTML pages were really fun to work on - I wanted to come up with little games almost where each page was a game that the students had to pass to get to the final prize. 10000.zip was actually taken from a previous CTF challenge I made up which was inspired by the Over The Wire CTF. The CTF challenge I previously made was 12 compressions using bzip, tar, gzip, and zip. That challenge was also hosted on a VM with a GUI so students were able to just right click and decompress the file. This time, I wanted to make that impossible even with a GUI. So, I increased the compressions to 10K so the students would have to automate it somehow. The bash script is so small and easy to write - takes about 30 mins to write and test and then just run it until the flag.txt file is extracted. Easy.
+
+I also really liked the idea of a cumulative CTF where parts from previous challenges (days) would combine together to form a bigger challenge (day 4). This is in stark contrast to CTF competitions where each challenge is independent of the other challenges. I also hate it when CTF competitions ask you to download multiple files for every challenge. I tried to keep that to a minimum.
+
+But all in all, I really had fun making this CTF and I think this was something that was needed for the club and the students. The whole COVID-19 situtation has made 2020 miserable and I think people wanted something fun to work on with others.
+
+[Back to the top](#rowan-universitys-cybersecurity-club-2020-discord-ctf)
