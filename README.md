@@ -170,7 +170,7 @@ REMEMBER - THIS IS JUST PSEUDO CODE - YOU HAVE TO THINK ABOUT THE ACTUAL CODE.
 # Written by Tapan Soni
 # 6/25/2020
 
-# I remember using the Scapy library to convert the Wireshark packet dump into an ****
+# I remember using the Scapy library to convert the Wireshark packet dump into an *****
 # What does [-8:] mean? Some kind of reverse mapping shortcut or something?
 # Notice the indentations - They might hint towards something
 s = ""
