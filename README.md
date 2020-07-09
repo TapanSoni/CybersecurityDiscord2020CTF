@@ -329,6 +329,10 @@ You need to click on the correct link.
 
 To go to the second HTML page - hover over each link and click on the link whos URL corresponds to ```https://tinyurl.com/ybtebyjb```. It's the 15th link.
 
+|Link location for index.html|
+|-|
+|![indexhtml.png](Files/indexhtml.png)|
+
 #### 2-pOjHrN5Jix.html
 
 This is the second HTML page. It's designed to annoy the player and confuse them.
@@ -337,6 +341,10 @@ Just scroll all the way to the bottom of the page and in the center of the page 
 
 Click on it to move on.
 
+|Link location for 2-pOjHrN5Jix.html|
+|-|
+|![2html.png](Files/2html.png)|
+
 #### 3-8MKRdsKyLb.html
 
 This is the third HTML page. It contains many Lorem Ipsum paragraphs.
@@ -344,6 +352,10 @@ This is the third HTML page. It contains many Lorem Ipsum paragraphs.
 Scroll through and each of the red bold words is a link. Look for the one that says ```saggatis``` - about three quarters of the way down. It leads to the next page.
 
 Again, these pages are designed to annoy you.
+
+|Link location for 3-8MKRdsKyLb.html|
+|-|
+|![3html.png](Files/3html.png)|
 
 #### 4-lTvgOncj6A.html
 
@@ -355,6 +367,10 @@ Just play the game and you will automatically be taken to the next HTML page.
 
 One trick (bug) is just keep smashing that jump button and the square will actually jump all the way off of the screen and go over all the bars. Keep doing that until you hit the random score.
 
+|Passing 4-lTvgOncj6A.html|
+|-|
+|![4html.png](Files/4html.png)|
+
 #### 5-0CKLGQydWA.html
 
 This is the fifth HTML page. This one is cool.
@@ -365,6 +381,14 @@ The hint is "10".
 
 Click the image 10 times to reveal the RGB values and then just press the RGB buttons that many times to correspond to the values shown. You will automatically be taken to the next page.
 
+|5-0CKLGQydWA.html before|
+|-|
+|![5htmlbefore.png](Files/5htmlbefore.png)|
+
+|5-0CKLGQydWA.html after|
+|-|
+|![5htmlafter.png](Files/5htmlafter.png)|
+
 #### 6-dIoLExY9wl.html
 
 This is the sixth and final HTML page. There is an awesome gif on this page and a whole bunch of white space below.
@@ -373,7 +397,69 @@ If you highlight that white space you'll see a Google Drive link.
 
 The Google Drive link is ```https://drive.google.com/drive/folders/1ciLB9Ci4M4Y-d0IFD40e4IygjuP7-2XP?usp=sharing```.
 
+|6-dIoLExY9wl.html link location|
+|-|
+|![6html.png](Files/6html.png)|
+
+When you follow the Google Drive link, you'll see a Google Drive folder with 2 files in it - ```10000.zip``` and ```README.doc```
+
+10000.zip is a zip file that has been zipped 10000 times. I did say in the README that I might have used different compressions (tar, bzip, gzip, etc.) but that was to mess with people. 
+
+I only used zip file compressions 10000 times.
+
+The easiest way is to write a simple bash script that decompresses the file for you:
+
+```bash
+#!/bin/bash
+
+# Written by Tapan Soni
+# 6/25/2020
+# THIS IS MY VERSION OF THE SOLUTION - YOUR SOLUTION MAY (PROBABLY WILL) DEFER
+
+# Takes in 2 params
+# 1) File to unzip
+# 2) # of times to unzip
+
+# Make sure to make the bash file executable by using chmod
+
+# Sample usage -> ./ucth.sh 100.zip 100
+
+for ((i=$2;i>0;i--))
+do
+	unzip "$((i)).zip"
+done
+```
+
+Just for fun but this is the bash script I used to compress the ```flag.txt``` file 10000 times:
+
+```bash
+#!/bin/bash
+
+# Written by Tapan Soni
+# 6/25/2020
+# THIS IS MY VERSION OF THE SOLUTION - YOUR SOLUTION MAY (PROBABLY WILL) DEFER
+
+# Takes in 2 params
+# 1) file to zip,
+# 2) # of times to zip
+
+# Make sure to make the bash file executable by using chmod
+
+# Sample usage -> ./cth.sh flag.txt 100
+
+# Initial compression
+zip 1.zip $1
+
+for ((i=1;i<$2;i++))
+do
+	zip "$((i+1)).zip" "$i.zip"
+done
+```
+
+And that's it. Once you decompress the file 10000 times (which will take a couple of minutes), you will see a flag.txt file which contains the final flag.
 
 ### Code
+
+```Day 5's code: CDCTF{trianglebagels}```
 
 ## Conclusion
