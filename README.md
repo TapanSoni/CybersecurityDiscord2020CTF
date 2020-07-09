@@ -489,4 +489,6 @@ I also really liked the idea of a cumulative CTF where parts from previous chall
 
 But all in all, I really had fun making this CTF and I think this was something that was needed for the club and the students. The whole COVID-19 situtation has made 2020 miserable and I think people wanted something fun to work on with others.
 
+I hope you had fun playing this CTF.
+
 [Back to the top](#rowan-universitys-cybersecurity-club-2020-discord-ctf)
