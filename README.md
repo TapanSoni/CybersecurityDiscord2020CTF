@@ -2,6 +2,14 @@
 
 ## CTF Creator: [Tapan Soni](https://github.com/TapanSoni)
 
+## Table Of Contents
+1. [Challenge 1 - Day 1: Monday](#challenge-1---day-1-monday)
+2. [Challenge 2 - Day 2: Tuesday](#challenge-2---day-2-tuesday)
+3. [Challenge 3 - Day 3: Wednesday](#challenge-3---day-3-wednesday)
+4. [Challenge 4 - Day 4: Thursday](#challenge-4---day-4-thursday)
+5. [Challenge 5 - Day 5: Friday](#challenge-5---day-5-friday)
+6. [Conclusion](#conclusion)
+
 ## Challenge 1 - Day 1: Monday
 
 ### Initially given synopsis
@@ -298,10 +306,73 @@ I tried my best to make it as visible as possible while keeping it hidden.
 |Image in the Google Form|
 |-|
 |![palpatine.png](Files/palpatine.png)|
+
 |Link location|
+|-|
 |![elvis_link_location.png](Files/elvis_link_location.png)|
+
 |URL|
+|-|
 |![elvis_link.png](Files/elvis_link.png)|
+
+When you go to the link ```elvis.rowan.edu/~sonit9``` you'll have to navigate through a series of html pages to get to progress.
+
+There are 6 HTML pages to get through.
+
+#### Right click is disabled on the HTML pages using simple Javascript. In cases where the user can disable Javascript using plugins like NoScript, I've taken measures to obfuscate the necessary HTML and Javascript code to prevent reverse-engineering. To the best of my abilities of course - I didn't have all year to make this.
+
+#### index.html
+
+The first one is a bunch of links telling the user to "Click me" or "Or me" etc.
+
+You need to click on the correct link.
+
+To go to the second HTML page - hover over each link and click on the link whos URL corresponds to ```https://tinyurl.com/ybtebyjb```. It's the 15th link.
+
+#### 2-pOjHrN5Jix.html
+
+This is the second HTML page. It's designed to annoy the player and confuse them.
+
+Just scroll all the way to the bottom of the page and in the center of the page on the bottom is a tiny link leading to the third HTML page.
+
+Click on it to move on.
+
+#### 3-8MKRdsKyLb.html
+
+This is the third HTML page. It contains many Lorem Ipsum paragraphs.
+
+Scroll through and each of the red bold words is a link. Look for the one that says ```saggatis``` - about three quarters of the way down. It leads to the next page.
+
+Again, these pages are designed to annoy you.
+
+#### 4-lTvgOncj6A.html
+
+This is the fourth HTML page. It includes a game I stole from https://www.w3schools.com/graphics/game_intro.asp and modified it.
+
+The goal of the game is to reach a certain score. The score is randomly choosen from a range of 1000 and 3500. The speed of the square is also randomly chosen.
+
+Just play the game and you will automatically be taken to the next HTML page.
+
+One trick (bug) is just keep smashing that jump button and the square will actually jump all the way off of the screen and go over all the bars. Keep doing that until you hit the random score.
+
+#### 5-0CKLGQydWA.html
+
+This is the fifth HTML page. This one is cool.
+
+You have to "guess" the correct RGB values of the color and reflect the values on the corresponding RGB buttons. 
+
+The hint is "10".
+
+Click the image 10 times to reveal the RGB values and then just press the RGB buttons that many times to correspond to the values shown. You will automatically be taken to the next page.
+
+#### 6-dIoLExY9wl.html
+
+This is the sixth and final HTML page. There is an awesome gif on this page and a whole bunch of white space below.
+
+If you highlight that white space you'll see a Google Drive link.
+
+The Google Drive link is ```https://drive.google.com/drive/folders/1ciLB9Ci4M4Y-d0IFD40e4IygjuP7-2XP?usp=sharing```.
+
 
 ### Code
 
