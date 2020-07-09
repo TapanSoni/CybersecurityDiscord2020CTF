@@ -289,7 +289,7 @@ The output of this Python program is the code for day 4.
 
 ### Initially given synopsis
 
-This might be helpful - https://tinyurl.com/[DAY 4 CODE]
+This might be helpful - https://tinyurl.com/ [DAY 4 CODE]
 
 ### Initially given files
 
