@@ -163,7 +163,43 @@ This is the first clue. Well, a message, not really a clue.
 
 ### Initilly given synopsis
 
-In progress
+REMEMBER - THIS IS JUST PSEUDO CODE - YOU HAVE TO THINK ABOUT THE ACTUAL CODE.
+
+```python
+# Some pseudo code - might be helpful in solving today's challenge
+# Written by Tapan Soni
+# 6/25/2020
+
+# I remember using the Scapy library to convert the Wireshark packet dump into an ****
+# What does [-8:] mean? Some kind of reverse mapping shortcut or something?
+# Notice the indentations - They might hint towards something
+s = ""
+a = []
+
+for p in wiresharkPacketDump:
+    # What kind of packet is p?
+    # Should probably know my TCP/IP headers
+    # What should I check for first in p - what comes first?
+
+        # What should I check for second in p - maybe some kind of layer?
+
+            # This part is easy - just plug in the codes from days 1-3 and you have the code
+            # And make sure to code it correctly
+            # Remember where a [DAY 1 CODE] appears! - Might help with the above pseudo code
+            if [DAY 1 CODE] in p:
+                s = bin([DAY 2 CODE](srcIP + dstIP + srcPort + dstPort + seqNum + data))[-8:]
+                a.append([DAY 3 CODE](int(s, 2)))
+
+    # This is an important part
+    # I went on a rant about this part a while back in the #general channel of the Discord
+    # It has something to do with a function in a library in Python
+    # Should probably do something about it here
+
+#################### END FOR LOOP ####################
+
+for k in a:
+    print(a, end = "")
+```
 
 ### Initially given files
 
