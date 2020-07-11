@@ -198,7 +198,7 @@ for p in wiresharkPacketDump:
 #################### END FOR LOOP ####################
 
 for k in a:
-    print(a, end = "")
+    print(k, end = "")
 ```
 
 ### Initially given files
