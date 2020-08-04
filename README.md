@@ -14,7 +14,7 @@
 
 ### Initially given synopsis
 
-They say a picture is worth a thousand words. I want to say that this picture is worth about 10, 000 words. This is the iconic and legendary nasa space shuttle seen here Booking it to space. This Particular image is of the Space shuttle on its 27th mission. A couple of fun facts about the space shuttle:
+they say a picture is worth a thousand words. i want to say that this picture is worth about 10, 000 words. this is the iconic and legendary nasa space shuttle seen here Booking it to space. this Particular image is of the Space shuttle on its 27th mission. a couple of fun facts about the space shuttle:
 
 1) over the course of its Tenure, the space shuttle has sent over 3 million pounds of cargo into space!
 2) the Entire length of the space shuttle is 183 feet
@@ -24,7 +24,7 @@ They say a picture is worth a thousand words. I want to say that this picture is
 6) the smallest crew to fly the space suttle was 2 - during the first few missions -- imagine the pressure on the New engines during the first test!
 7) the space shuttle is designed to reach Orbits randing from about 185 kilometers to 643 kilometers high!
 
-The space shuttle program has transformed the direction of space travel forever. It has transformed thousands of lives and given us a new direction to venture into when looking up at the STARS.
+the space shuttle program has transformed the direction of space travel forever. it has transformed thousands of lives and given us a new direction to venture into when looking up at the STARS.
 
 ### Initially given files
 
