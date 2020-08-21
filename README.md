@@ -170,7 +170,7 @@ REMEMBER - THIS IS JUST PSEUDO CODE - YOU HAVE TO THINK ABOUT THE ACTUAL CODE.
 # Written by Tapan Soni
 # 6/25/2020
 
-# I remember using the Scapy library to convert the Wireshark packet dump into an *****
+# I remember using the Scapy library to convert the Wireshark packet dump into an a concatenation of data
 # What does [-8:] mean? Some kind of reverse mapping shortcut or something?
 # Notice the indentations - They might hint towards something
 s = ""
@@ -179,7 +179,7 @@ a = []
 for p in wiresharkPacketDump:
     # What kind of packet is p?
     # Should probably know my TCP/IP headers
-    # What should I check for first in p - what comes first?
+    # What should I check for first in p - what comes first in the packet?
 
         # What should I check for second in p - maybe some kind of layer?
 
@@ -193,6 +193,9 @@ for p in wiresharkPacketDump:
     # This is an important part
     # I went on a rant about this part a while back in the #general channel of the Discord
     # It has something to do with a function in a library in Python
+    # Probably has something to do with the hashing function
+    # Might want to look into how the update() function works - the buffer is overloaded?
+    # How do you fix that?
     # Should probably do something about it here
 
 #################### END FOR LOOP ####################
