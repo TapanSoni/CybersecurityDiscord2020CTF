@@ -53,7 +53,7 @@ When you look at the capatilized letters of the words - they spell ```BPSTEGANO`
 
 BPStegano uses AES-128 encryption a custom LSB random pixel algorithm hiding to hide raw strings and any type of file inside images.
 
-Download and run BPStegano on the shuttle.png image. The password is ```STARS ```.
+Download and run BPStegano on the shuttle.png image. The password is ```STARS```.
 
 BPStegano will decode the image and save the contents of the image into a ```HIDDEN_DATA``` folder.
 
