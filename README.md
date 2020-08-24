@@ -85,15 +85,15 @@ None.
 
 ### Solution
 
-When you search for ```u/sdfjkloeifpoiwkef``` on Reddit, you will see their profile. There are a bunch of images that are posted on the profile by the user. They are there to throw you off.
+When you search for ```u/sdfjkloeifpoiwjef``` on Reddit, you will see their profile. There are a bunch of images that are posted on the profile by the user. They are there to throw you off.
 
-Look at the user description box under the profile image and you will see a link there. The link is ```https://gofile.io/d/MgWhQ5``` -- it is a GoFile link to an image.
+Look at the user description box under the profile image and you will see a link there. The link is ```https://tinyurl.com/y37obj4c``` -- it is a GoFile link to an image.
 
 |Location of the GoFile link|
 |-----------|
 |![](Files/d2_link_loc.png)|
 
-|Image at the GoFile link|
+|Image at the TinyURL link|
 |-----------|
 |![corkbottle.jpg](Files/corkbottle.jpg)|
 
